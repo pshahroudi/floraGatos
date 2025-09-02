@@ -52,7 +52,7 @@ section {
 }
 
 .terrarium-page {
-  border: 1px solid #dee2e6;
-  border-radius: 0.5rem;
   padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
 }
