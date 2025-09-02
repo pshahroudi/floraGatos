@@ -12,9 +12,17 @@
         template: '<home></home>',
         title: 'FloraGatos | Plants from Los Gatos'
       })
+      .when('/shop', {
+        template: '<shop></shop>',
+        title: 'Shop | FloraGatos'
+      })
       .when('/about', {
         template: '<about></about>',
         title: 'About | FloraGatos'
+      })
+      .when('/contact', {
+        template: '<contact></contact>',
+        title: 'Contact | FloraGatos'
       })
       .otherwise('/');
   }
