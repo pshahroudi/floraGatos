@@ -11,18 +11,30 @@
 
     vm.products = [
       {
-        name: 'Woodland Moss Terrarium',
-        image: 'assets/terrarium_on_desk.png',
-        description: 'Compact glass terrarium filled with lush green mosses.',
+        name: 'Geometric Oasis Terrarium',
+        image:
+          'https://images.unsplash.com/photo-1462524500090-89443873e2b3?auto=format&fit=crop&w=400&q=60',
+        description:
+          'A stunning glass terrarium with sharp angles that showcase a modern succulent scene.',
         details:
-          'This handcrafted terrarium brings a slice of the forest floor to your desk. Features layered drainage, nutrient-rich substrate, and a mix of thriving moss varieties.',
+          'Crafted with clean lines, this terrarium houses a variety of hardy succulents and moss, creating a vibrant focal point for any room.',
       },
       {
-        name: 'Desert Cactus Terrarium',
-        image: 'https://via.placeholder.com/300x200?text=Terrarium',
-        description: 'A sun-loving mini desert landscape in a clear dome.',
+        name: 'Classic Bell Jar Terrarium',
+        image: 'assets/terrarium_on_desk.png',
+        description:
+          'Traditional bell jar filled with lush foliage and natural accents.',
         details:
-          'A striking arrangement of miniature cacti and stones that thrives on minimal water. Perfect for bright spaces and busy plant lovers.',
+          'A timeless design featuring layered drainage and humidity-loving plants to bring calm to your desk or shelf.',
+      },
+      {
+        name: 'Hanging Orb Terrarium',
+        image:
+          'https://images.unsplash.com/photo-1511806753113-5627b3cb1153?auto=format&fit=crop&w=400&q=60',
+        description:
+          'A whimsical hanging orb perfect for small spaces and air plants.',
+        details:
+          'Suspended elegance showcasing airy tillandsia and decorative stones. Easy to care for and ideal for bright corners.',
       },
     ];
 
