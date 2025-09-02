@@ -1,7 +1,15 @@
 <section class="text-center py-5">
   <h1 class="display-4 mb-3">Bring Home the Beauty of Plants</h1>
-  <p class="lead mb-4">Hand-selected greenery from Los Gatos to your doorstep.</p>
-  <a class="btn btn-success btn-lg" href="https://www.etsy.com/shop/FloraGatos" target="_blank" rel="noopener">Shop on Etsy</a>
+  <p class="lead mb-4">
+    Hand-selected greenery from Los Gatos to your doorstep.
+  </p>
+  <a
+    class="btn btn-success btn-lg"
+    href="https://www.etsy.com/shop/FloraGatos"
+    target="_blank"
+    rel="noopener"
+    >Shop on Etsy</a
+  >
 </section>
 
 <section class="row text-center mb-5">
@@ -27,11 +35,21 @@
   <div class="row">
     <div class="col-md-4 mb-4" ng-repeat="product in $ctrl.products">
       <div class="card h-100">
-        <img class="card-img-top" ng-src="{{product.image}}" alt="{{product.alt}}">
+        <img
+          class="card-img-top"
+          ng-src="{{product.image}}"
+          alt="{{product.alt}}"
+        />
         <div class="card-body d-flex flex-column">
           <h3 class="h5 card-title">{{product.name}}</h3>
           <p class="card-text">{{product.description}}</p>
-          <a class="btn btn-outline-success mt-auto" href="https://www.etsy.com/shop/FloraGatos" target="_blank" rel="noopener">Buy Now</a>
+          <a
+            class="btn btn-outline-success mt-auto"
+            href="https://www.etsy.com/shop/FloraGatos"
+            target="_blank"
+            rel="noopener"
+            >Buy Now</a
+          >
         </div>
       </div>
     </div>
