@@ -56,3 +56,8 @@ section {
   background-color: #fff;
   border-radius: 0.5rem;
 }
+
+.product-card .product-img {
+  height: 220px;
+  object-fit: cover;
+}
