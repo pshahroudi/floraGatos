@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+    text { font-family: 'Butterfly Kids', cursive; }
+  </style>
   <rect width="400" height="300" fill="#e6f7ff"/>
-  <text font-family="Butterfly Kids" x="200" y="150" font-size="32" text-anchor="middle" fill="#00507a">Fiddle Leaf Fig</text>
+  <text x="200" y="150" font-size="32" text-anchor="middle" fill="#00507a">Fiddle Leaf Fig</text>
 </svg>
