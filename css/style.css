@@ -61,3 +61,7 @@ section {
   height: 220px;
   object-fit: cover;
 }
+
+.product-card {
+  cursor: pointer;
+}
