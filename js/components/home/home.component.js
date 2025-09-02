@@ -10,24 +10,24 @@
 
   function HomeController() {
     var vm = this;
-    vm.products = [
+    vm.categories = [
       {
-        name: 'Succulent Trio',
-        description: 'Low-maintenance succulents perfect for desks and shelves.',
+        name: 'Terrariums',
+        description: 'Low-maintenance, perfect for desks under LED lights.',
+        image: 'assets/terrarium.svg',
+        alt: 'Glass terrarium on a desk'
+      },
+      {
+        name: 'Succulents',
+        description: 'Perfect for window decorations.',
         image: 'assets/succulent-trio.svg',
         alt: 'Succulent trio in ceramic pots'
       },
       {
-        name: 'Fiddle Leaf Fig',
-        description: 'A popular indoor tree that thrives in bright light.',
+        name: 'Indoor House Plants',
+        description: 'Vibrant foliage for any room.',
         image: 'assets/fiddle-leaf-fig.svg',
         alt: 'Fiddle leaf fig in a living room'
-      },
-      {
-        name: 'Snake Plant',
-        description: 'Air-purifying plant ideal for low light spaces.',
-        image: 'assets/snake-plant.svg',
-        alt: 'Snake plant in a white pot'
       }
     ];
   }
