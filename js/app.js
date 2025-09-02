@@ -6,7 +6,9 @@
     .config(config)
     .controller('MainCtrl', MainCtrl);
 
-  function config($routeProvider) {
+  function config($routeProvider, $locationProvider) {
+    $locationProvider.hashPrefix('');
+
     $routeProvider
       .when('/', {
         template: '<home></home>',
