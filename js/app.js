@@ -16,6 +16,10 @@
         template: '<shop></shop>',
         title: 'Shop | FloraGatos'
       })
+      .when('/terrariums', {
+        template: '<terrariums></terrariums>',
+        title: 'Terrariums | FloraGatos'
+      })
       .when('/about', {
         template: '<about></about>',
         title: 'About | FloraGatos'

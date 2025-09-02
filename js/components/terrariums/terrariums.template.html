@@ -1,0 +1,86 @@
+<section class="terrarium-page mt-4">
+  <h1 class="h3 mb-3">Terrariums</h1>
+  <p>
+    Terrariums are miniature ecosystems enclosed in glass, offering a captivating way to showcase plants while requiring minimal care. Their self-sustaining nature makes them perfect for desks, shelves, or any small space craving a touch of greenery.
+  </p>
+  <div class="text-center my-4">
+    <img
+      src="assets/terrarium_layers.png"
+      alt="Diagram of terrarium layers"
+      class="img-fluid rounded"
+    />
+    <ul class="text-start mt-3">
+      <li><strong>LECA Balls –</strong> Expanded clay pebbles that provide drainage.</li>
+      <li><strong>Mesh –</strong> Prevents soil from mixing with the drainage layer.</li>
+      <li><strong>Charcoal –</strong> Filters impurities and keeps the terrarium fresh.</li>
+      <li><strong>Substrate –</strong> A mix of orchid bark, worm castings, horticultural charcoal, and sphagnum moss, creating a rich growing medium.</li>
+      <li><strong>Plants –</strong> The final layer where your chosen greenery thrives.</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-4" ng-repeat="product in $ctrl.products">
+      <div class="card h-100">
+        <img
+          ng-src="{{product.image}}"
+          alt="{{product.name}}"
+          class="card-img-top"
+        />
+        <div class="card-body d-flex flex-column">
+          <h2 class="h5 card-title">{{product.name}}</h2>
+          <p class="card-text">{{product.description}}</p>
+          <button
+            class="btn btn-success mt-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#productModal"
+            ng-click="$ctrl.openDetails(product)"
+          >
+            Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div
+  class="modal fade"
+  id="productModal"
+  tabindex="-1"
+  aria-labelledby="productModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">
+          {{$ctrl.selectedProduct.name}}
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <img
+          ng-src="{{$ctrl.selectedProduct.image}}"
+          alt="{{$ctrl.selectedProduct.name}}"
+          class="img-fluid mb-3"
+        />
+        <p>{{$ctrl.selectedProduct.details}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Buy</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
