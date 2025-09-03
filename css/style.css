@@ -65,3 +65,10 @@ section {
 .product-card {
   cursor: pointer;
 }
+
+.butterfly-kids {
+  font-family: "Butterfly Kids", cursive;
+}
+.delius {
+  font-family: "Delius", cursive;
+}
