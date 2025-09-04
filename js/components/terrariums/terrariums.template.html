@@ -1,61 +1,105 @@
 <section class="product-page terrarium-page py-5 border rounded-3">
-  <div class="text-center mb-5">
-    <h1 class="fw-bold display-1 mb-3 butterfly-kids">
-      Discover the World of Terrariums
-    </h1>
+  <div class="mb-2">
+    <div class="mb-2 bg-light border border-1 rounded-3">
+      <h1 class="fw-bold display-1 mb-3 butterfly-kids text-center">
+        Discover the World of Terrariums
+      </h1>
+    </div>
+    <p class="fs-5 mx-auto p-3">
+      Terrariums are miniature, self-sustaining ecosystems housed in glass
+      containers. They bring a touch of nature indoors, requiring minimal
+      maintenance while adding a serene and beautiful element to any space.
+    </p>
     <img
       src="assets/terrariums_for_every_space.png"
       alt="Assorted terrariums"
       class="img-fluid rounded shadow mb-3"
     />
-    <p class="lead mx-auto" style="max-width: 700px">
-      Terrariums are miniature, self-sustaining ecosystems housed in glass
-      containers. They bring a touch of nature indoors, requiring minimal
-      maintenance while adding a serene and beautiful element to any space.
-    </p>
   </div>
 
-  <div class="row align-items-center g-4 mb-5">
-    <div class="col-md-6 text-center">
-      <img
-        src="assets/terrarium_layers.png"
-        alt="Terrarium layers diagram"
-        class="img-fluid rounded shadow"
-      />
+  <div class="row align-items-center g-4 mb-5 ms-0">
+    <div class="col-md-12">
+      <div
+        class="fw-bold display-4 text-center butterfly-kids bg-light border rounded-3 mb-3"
+      >
+        Terrariums: The Perfect Indoor Office Plants
+      </div>
+
+      <p class="fs-5">
+        In today’s busy world, many of us spend long hours indoors—working in
+        offices, sitting at desks, or in front of computer screens. Terrariums
+        are a simple and beautiful way to bring nature into these spaces. Unlike
+        traditional houseplants, they thrive under LED or artificial light,
+        which makes them ideal for offices and homes with little or no natural
+        sunlight.
+      </p>
+      <p class="fs-5">
+        A terrarium functions as a <strong>self-sustaining ecosystem</strong>:
+        once sealed, moisture circulates inside the glass container. This means
+        they require very little watering—sometimes only once every few months.
+        The plants used are
+        <strong>miniature, slow-growing varieties</strong> that stay compact,
+        making them easy to manage without frequent trimming. Because everything
+        is contained, there’s no soil mess, spills, or clutter—just a clean,
+        green, low-maintenance garden in glass.
+      </p>
+      <p class="fs-5">
+        All of these qualities make terrariums the
+        <strong>perfect choice for modern indoor spaces</strong>. They bring a
+        calming, natural focal point to your desk or living area, letting you
+        enjoy a piece of nature while you work or relax indoors.
+      </p>
     </div>
-    <div class="col-md-6">
-      <h2 class="h5 mb-3">Terrarium Layers (Bottom to Top):</h2>
-      <ul class="ps-4">
-        <li class="mb-1">
-          <strong>LECA Balls –</strong> Expanded clay pebbles that provide
-          drainage.
-        </li>
-        <li class="mb-1">
-          <strong>Mesh –</strong> Prevents soil from mixing with the drainage
-          layer.
-        </li>
-        <li class="mb-1">
-          <strong>Charcoal –</strong> Filters impurities and keeps the terrarium
-          fresh.
-        </li>
-        <li class="mb-1">
-          <strong>Substrate –</strong> A mix of orchid bark, worm castings,
-          horticultural charcoal, and sphagnum moss, creating a rich growing
-          medium.
-        </li>
-        <li class="mb-1">
-          <strong>Plants –</strong> The final layer where your chosen greenery
-          thrives.
-        </li>
-      </ul>
+
+    <div class="row bg-light border rounded-3">
+      <div class="col-md-12">
+        <h2 class="fw-bold display-5 butterfly-kids text-center">
+          Terrarium Layers (Bottom to Top):
+        </h2>
+      </div>
+    </div>
+    <div class="row align-items-center g-2 mb-2">
+      <!-- Image left -->
+      <div class="col-md-6 text-center">
+        <img
+          src="assets/terrarium_layers.png"
+          alt="Terrarium layers diagram"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+
+      <!-- Text right -->
+      <div class="col-md-6">
+        <ul class="ps-4 fs-5">
+          <li class="mb-1">
+            <strong>LECA Balls –</strong> Expanded clay pebbles that provide
+            drainage.
+          </li>
+          <li class="mb-1">
+            <strong>Mesh –</strong> Prevents soil from mixing with the drainage
+            layer.
+          </li>
+          <li class="mb-1">
+            <strong>Charcoal –</strong> Filters impurities and keeps the
+            terrarium fresh.
+          </li>
+          <li class="mb-1">
+            <strong>Substrate –</strong> A mix of orchid bark, worm castings,
+            horticultural charcoal, and sphagnum moss, creating a rich growing
+            medium.
+          </li>
+          <li class="mb-1">
+            <strong>Plants –</strong> The final layer where your greenery
+            thrives.
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <h2
-    class="text-center mb-2 display-2 butterfly-kids fw-bold bg-light rounded-3"
-  >
-    Our Products
-  </h2>
+  <div class="bg-light border border-1 rounded-3 mb-3">
+    <h2 class="fw-bold display-5 butterfly-kids text-center">Our Products</h2>
+  </div>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col" ng-repeat="product in $ctrl.products">
       <div
