@@ -14,13 +14,17 @@
         template: '<home></home>',
         title: 'FloraGatos | Plants from Los Gatos'
       })
-      .when('/shop', {
-        template: '<shop></shop>',
-        title: 'Shop | FloraGatos'
-      })
       .when('/terrariums', {
         template: '<terrariums></terrariums>',
         title: 'Terrariums | FloraGatos'
+      })
+      .when('/succulents', {
+        template: '<succulents></succulents>',
+        title: 'Succulents | FloraGatos'
+      })
+      .when('/indoor-house-plants', {
+        template: '<indoor></indoor>',
+        title: 'Indoor House Plants | FloraGatos'
       })
       .when('/about', {
         template: '<about></about>',
