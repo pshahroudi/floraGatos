@@ -1,45 +1,85 @@
 <section class="border rounded-3 p-4 p-md-5 bg-light">
-  <h1 class="mb-4 d-flex align-items-center">
-    <img src="assets/contact_leaf.svg" alt="Leaf illustration" width="40" class="me-2" />
-    <span><i class="bi bi-envelope-fill me-2"></i>Contact Us</span>
+  <h1 class="d-flex align-items-center display-5 fw-bold mb-3 butterfly-kids">
+    <span><i class="bi bi-envelope me-2"></i>Contact Us</span>
   </h1>
-  <img src="assets/indoor_house_plants.png" class="img-fluid rounded-3 mb-4 shadow" alt="Indoor house plants" />
+  <img
+    src="assets/indoor_house_plants.png"
+    class="img-fluid rounded-3 mb-4 shadow"
+    alt="Indoor house plants"
+  />
   <p class="lead">
-    If you have questions about products or shipping, feel free to ask.
-    We provide delivery services in the Bay Area.
-    Terrarium products can't be shipped because they will be damaged.
+    If you have questions about products or shipping, feel free to ask. We
+    provide delivery services in the Bay Area. Terrarium products can't be
+    shipped because they will be damaged.
   </p>
-  <form name="contactForm" ng-submit="$ctrl.submitForm(contactForm)" novalidate class="row g-3">
+  <form
+    name="contactForm"
+    ng-submit="$ctrl.submitForm(contactForm)"
+    novalidate
+    class="row g-3"
+  >
     <div class="col-md-6">
       <label for="name" class="form-label">Name</label>
       <div class="input-group">
         <span class="input-group-text"><i class="bi bi-person"></i></span>
-        <input type="text" class="form-control" id="name" name="name" ng-model="$ctrl.formData.name" required />
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          ng-model="$ctrl.formData.name"
+          required
+        />
       </div>
     </div>
     <div class="col-md-6">
       <label for="phone" class="form-label">Phone Number</label>
       <div class="input-group">
         <span class="input-group-text"><i class="bi bi-telephone"></i></span>
-        <input type="tel" class="form-control" id="phone" name="phone" ng-model="$ctrl.formData.phone" required />
+        <input
+          type="tel"
+          class="form-control"
+          id="phone"
+          name="phone"
+          ng-model="$ctrl.formData.phone"
+          required
+        />
       </div>
     </div>
     <div class="col-12">
       <label for="email" class="form-label">Email address</label>
       <div class="input-group">
         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-        <input type="email" class="form-control" id="email" name="email" ng-model="$ctrl.formData.email" required />
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          ng-model="$ctrl.formData.email"
+          required
+        />
       </div>
     </div>
     <div class="col-12">
       <label for="message" class="form-label">Message</label>
       <div class="input-group">
         <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
-        <textarea class="form-control" id="message" name="message" rows="4" ng-model="$ctrl.formData.message" required></textarea>
+        <textarea
+          class="form-control"
+          id="message"
+          name="message"
+          rows="4"
+          ng-model="$ctrl.formData.message"
+          required
+        ></textarea>
       </div>
     </div>
     <div class="col-12 text-end">
-      <button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        ng-disabled="contactForm.$invalid"
+      >
         <i class="bi bi-send-fill me-1"></i>Send
       </button>
     </div>
