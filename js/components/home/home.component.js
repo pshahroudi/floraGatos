@@ -21,14 +21,14 @@
         description: "Perfect for window decorations.",
         image: "assets/succulents_window.png",
         alt: "Succulent trio in ceramic pots",
-        url: "#",
+        url: "#/succulents",
       },
       {
         name: "Indoor House Plants",
         description: "Vibrant foliage for any room.",
         image: "assets/indoor_house_plants.png",
         alt: "Fiddle leaf fig in a living room",
-        url: "#",
+        url: "#/indoor-house-plants",
       },
     ];
   }
