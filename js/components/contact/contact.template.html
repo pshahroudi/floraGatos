@@ -12,12 +12,16 @@
     provide delivery services in the Bay Area. Terrarium products can't be
     shipped because they will be damaged.
   </p>
-  <form
-    name="contactForm"
-    ng-submit="$ctrl.submitForm(contactForm)"
-    novalidate
-    class="row g-3"
-  >
+
+  <!-- Integrated with Web3Forms -->
+  <form action="https://api.web3forms.com/submit" method="POST" class="row g-3">
+    <!-- Required: your public access key -->
+    <input
+      type="hidden"
+      name="access_key"
+      value="badc4c25-9a65-4ffa-8908-d4f22788983f"
+    />
+
     <div class="col-md-6">
       <label for="name" class="form-label">Name</label>
       <div class="input-group">
@@ -27,11 +31,11 @@
           class="form-control"
           id="name"
           name="name"
-          ng-model="$ctrl.formData.name"
           required
         />
       </div>
     </div>
+
     <div class="col-md-6">
       <label for="phone" class="form-label">Phone Number</label>
       <div class="input-group">
@@ -41,11 +45,11 @@
           class="form-control"
           id="phone"
           name="phone"
-          ng-model="$ctrl.formData.phone"
           required
         />
       </div>
     </div>
+
     <div class="col-12">
       <label for="email" class="form-label">Email address</label>
       <div class="input-group">
@@ -55,11 +59,11 @@
           class="form-control"
           id="email"
           name="email"
-          ng-model="$ctrl.formData.email"
           required
         />
       </div>
     </div>
+
     <div class="col-12">
       <label for="message" class="form-label">Message</label>
       <div class="input-group">
@@ -69,24 +73,15 @@
           id="message"
           name="message"
           rows="4"
-          ng-model="$ctrl.formData.message"
           required
         ></textarea>
       </div>
     </div>
+
     <div class="col-12 text-end">
-      <button
-        type="submit"
-        class="btn btn-primary"
-        ng-disabled="contactForm.$invalid"
-      >
+      <button type="submit" class="btn btn-primary">
         <i class="bi bi-send-fill me-1"></i>Send
       </button>
-    </div>
-    <div class="col-12" ng-if="$ctrl.sent">
-      <div class="alert alert-success mt-3" role="alert">
-        Thank you! We'll be in touch soon.
-      </div>
     </div>
   </form>
 </section>
