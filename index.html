@@ -88,9 +88,32 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#/">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#/shop">Shop</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#/terrariums">Terrariums</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="productsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#/terrariums">Terrariums</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#/succulents">Succulents</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#/indoor-house-plants">
+                    Indoor House Plants
+                  </a>
+                </li>
+              </ul>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#/about">About</a>
             </li>
@@ -131,9 +154,10 @@
     ></script>
     <script src="js/app.js"></script>
     <script src="js/components/home/home.component.js"></script>
-    <script src="js/components/shop/shop.component.js"></script>
     <script src="js/components/about/about.component.js"></script>
     <script src="js/components/terrariums/terrariums.component.js"></script>
     <script src="js/components/contact/contact.component.js"></script>
+    <script src="js/components/succulents/succulents.component.js"></script>
+    <script src="js/components/indoor/indoor.component.js"></script>
   </body>
 </html>
